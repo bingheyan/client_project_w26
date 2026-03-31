@@ -55,6 +55,7 @@
         <li><strong>Get A Response</strong> Don’t get discouraged by low response rate - average response rate to “cold
           messages” is around 20%.</li>
       </ol>
+      <br>
       <p>
         <a href="https://docs.google.com/presentation/d/1R6azi49e7vd3ubRtdm33qG6Aq3bLBDBue7blM6pv49I/edit?usp=sharing">Check
           out this link for more details when following these two steps! </a>
@@ -67,7 +68,7 @@
         different scenarios.</p>
       <section>
         <hr>
-        <h3>Reaching out to Industry Professional</h3>
+        <h3 class="example">Reaching out to Industry Professional</h3>
         <p>Subject: UMSI BSI Student Seeking Your Advice</p>
         <br>
         <div tabindex="0" class="font">
@@ -87,7 +88,7 @@
         </div>
         
         <hr>
-        <h3>Following up on a presentation, webinar, panel, etc.</h3>
+        <h3 class="example">Following up on a presentation, webinar, panel, etc.</h3>
         <p>Subject: Following up and seeking additional Information</p>
         <br>
         <div tabindex="0" class="font">
@@ -108,7 +109,7 @@
         </div>
         
         <hr>
-        <h3>Reaching out to Another UMSI Student </h3>
+        <h3 class="example">Reaching out to Another UMSI Student </h3>
         <p>Subject: 1st Year MSI Seeking Your Advice</p>
         <br>
         <div tabindex="0" class="font">
@@ -125,8 +126,7 @@
         <p>Best wishes,</p>
         <p>Hanna</p>
         </div>
-        
-        <hr>
+      
       </section>
     </div>
 
@@ -166,9 +166,15 @@
 
   </main>
   <footer>
-    <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career
-        Development Office </a></p>
+    <p>&copy; <span id="year"></span> University of Michigan School of Information | 
+      <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a>
+    </p>
   </footer>
+
+<script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById("year").textContent = currentYear;
+</script>
 
 </body>
 

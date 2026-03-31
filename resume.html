@@ -42,6 +42,7 @@
         On this page, you'll find practical tips, templates, and guides—all tailored to the needs of School of
         Information students and aligned with employer expectations.
       </p>
+      <br>
       <p>
         Need feedback? You can always <a
           href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach" target="_blank">meet with a
@@ -98,6 +99,7 @@
           Attend a Resume Refresh workshop, review video tutorials, or access additional templates.
         </li>
       </ul>
+      <br>
       <p>
         Ready for review? <a href="https://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach"
           target="_blank">Book a resume review appointment with a CDO Career Coach</a>.
@@ -131,9 +133,15 @@
 
   </main>
   <footer>
-    <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career
-        Development Office </a></p>
+    <p>&copy; <span id="year"></span> University of Michigan School of Information | 
+      <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a>
+    </p>
   </footer>
+
+<script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById("year").textContent = currentYear;
+</script>
 
 </body>
 
