@@ -60,14 +60,14 @@ nav a.active {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat (5, 1fr);
     gap: 10px;
     width: 100%;
     padding: 10px;
 }
 
 .welcome {
-    grid-column: 1 / -1;
+    grid-column: 2 / -2;
     padding: 10px 0;
     color: #00274C;
     font-weight: bold;
@@ -97,7 +97,7 @@ nav a.active {
 .behavioral,
 .technical
 .form {
-    grid-column: 1 / -1;
+    grid-column: 2 / -2 ;
     padding: 10px 0;
 }
 
@@ -194,7 +194,7 @@ a {
 }
 
 .form {
-    grid-column: 1 / -1;
+    grid-column: 2 / -2;
 }
 
 .form label {
