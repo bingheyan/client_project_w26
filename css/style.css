@@ -60,14 +60,14 @@ nav a.active {
 
 .container {
     display: grid;
-    grid-template-columns: repeat (5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     width: 100%;
     padding: 10px;
 }
 
 .welcome {
-    grid-column: 2 / -2;
+    grid-column: 1 / -1;
     padding: 10px 0;
     color: #00274C;
     font-weight: bold;
@@ -95,10 +95,13 @@ nav a.active {
 .know,
 .question,
 .behavioral,
-.technical
-.form {
-    grid-column: 2 / -2 ;
+.technical {
+    grid-column: 1 / -1 ;
     padding: 10px 0;
+}
+
+.form  {
+    grid-column: 1 / -1;
 }
 
 .resources h2,
@@ -190,11 +193,15 @@ hr {
 
 a {
     text-decoration: none;
-    color: #014e96;
+    color: #053867;
 }
 
-.form {
-    grid-column: 2 / -2;
+a:hover {
+    text-decoration: underline;
+}
+
+.connect a, .craft a {
+    text-decoration: underline;
 }
 
 .form label {
@@ -296,15 +303,9 @@ footer a {
         outline: 2px solid #ffe99f;
     }
 
-    .skip a {
-        position: absolute;
-        top: -50px;
-        background-color: #00274C;
-        color: #e5e5e5;
-    }
-
     .skip a:focus {
         top: 10px;
+        left: 10px;
     }
 
     /* body */
